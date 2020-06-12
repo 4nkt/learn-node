@@ -20,4 +20,11 @@ router.get('/reverse/:text', (req, res) => {
   res.send(reverse);
 });
 
+router.get('/hello', (req, res) => {
+  res.render('hello', {
+    name: 'John',
+    dog: 'snickers'
+  });
+});
+
 module.exports = router;
