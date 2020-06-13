@@ -23,7 +23,8 @@ router.get('/reverse/:text', (req, res) => {
 router.get('/hello', (req, res) => {
   res.render('hello', {
     name: 'John',
-    dog: 'snickers'
+    dog: 'snickers',
+    title: 'Hello'
   });
 });
 
